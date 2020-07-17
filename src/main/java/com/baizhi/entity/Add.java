@@ -4,11 +4,13 @@ public class Add {
     private String id;
     private String name;
     private String salary;
+    private String age;
 
     public Add(String id, String name, String salary) {
         this.id = id;
         this.name = name;
         this.salary = salary;
+        this.age = age;
     }
 
     public Add() {
@@ -37,6 +39,13 @@ public class Add {
     public void setSalary(String salary) {
         this.salary = salary;
     }
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
 
     @Override
     public String toString() {
@@ -44,6 +53,8 @@ public class Add {
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", salary='" + salary + '\'' +
+                ", age='" + age + '\''+
                 '}';
     }
+
 }
